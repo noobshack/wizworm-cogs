@@ -9,10 +9,12 @@ A future home for custom Red cogs.
 !load downloader
 !repo add jumper-cogs https://github.com/Redjumpman/Jumper-Cogs
 I agree
-!cog list jumper-cogs
 !cog install jumper-cogs casino
 !cog install jumper-cogs russianroulette
-!cog load casino
-!cog load russianroulette
+!load casino
+!load russianroulette
 !cog update
 ```
+
+For information on available cogs:
+`!cog list jumper-cogs`
