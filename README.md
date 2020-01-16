@@ -1,6 +1,13 @@
 # wizworm-cogs
 A future home for custom Red cogs.
 
+Various cogs can be created to manage different aspects of noobshack in a chatops style.
+- create/manage/view dedicated gameserver infrastructure
+- administration of those servers
+- trigger builds/deployments of applications
+- autoscale kubernetes infrastructure
+- redeploy itself with minimal downtime.
+
 ## Third-party plugins
 [Jumper-plugins casinos](https://github.com/Redjumpman/Jumper-Plugins/wiki/Casino-RedV3#stats)
 
