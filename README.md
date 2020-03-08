@@ -8,6 +8,20 @@ Various cogs can be created to manage different aspects of noobshack in a chatop
 - autoscale kubernetes infrastructure
 - redeploy itself with minimal downtime.
 
+## noobshack plugins
+### Future commands
+#### Community info (Gameserver information and feedback)
+- MORDHAU server name + IP
+- BattleMetrics information
+- List points for all members
+
+#### noobshack pointing system
+- TBD
+
+#### Gameserver remote administrative commands
+- Stop/Start/Restart of containers for servers.
+- RCON access via discord
+
 ## Third-party plugins
 [Jumper-plugins - casino](https://github.com/Redjumpman/Jumper-Plugins)
 
