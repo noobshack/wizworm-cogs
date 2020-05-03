@@ -1,0 +1,8 @@
+{
+    "author" : ["mpmsimo (Reulan#0003)"],
+    "install_msg" : "wizworm-cogs: loaded noobshack points",
+    "name" : "points",
+    "short" : "noobshack discord ranking and rewards system",
+    "description" : "Provides a way to associate points to all memebers within the noobshack Gaming discord.",
+    "min_python_version": [3, 6, 0]
+}
