@@ -1,0 +1,10 @@
+{
+    "author" : "reulan (Reulan#0003)",
+    "install_msg" : "wizworm-cogs: r|n - Gaze API integration\n<https://github.com/noobshack/wizworm-cogs>",
+    "name" : "wizworm-cogs-gaze",
+    "short" : "noobshack API metrics",
+    "requirements" : ["requests"],
+    "description" : "Sends HTTPS requests to gaze.reulan.com",
+    "tags" : ["Admin"],
+    "type" : "SHARED_LIBRARY"
+}
