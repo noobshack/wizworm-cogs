@@ -8,31 +8,30 @@ class Gaze(commands.Cog):
     gaze_base_url = "gaze.reulan.com"
     gaze_route = "/gameservers"
 
+    def print_request_data(r):
+        print("Status Code: " + r.status_code + "\n")
+        print("Text: " + r.text + "\n")
+        print("JSON: " + r.json() + "\n")
+
     # gameserver information
     @commands.command()
     async def get_index(self, ctx):
         """Returns the hostname"""
         r = requests.get(gaze_base_url)
-        print("Status Code: " + r.status_code + "\n")
-        print("Text: " + r.text + "\n")
-        print("JSON: " + r.json() + "\n")
+        print_request_data(r)
         await ctx.send(r.text)
 
     @commands.command()
     async def get_gameserver_list(self, ctx):
         """placeholder!"""
         r = requests.get(gaze_base_url + gaze_route)
-        print("Status Code: " + r.status_code + "\n")
-        print("Text: " + r.text + "\n")
-        print("JSON: " + r.json() + "\n")
+        print_request_data(r)
         await ctx.send(r.text)
 
-    """
     @commands.command()
-    async def get_gameserver(self, ctx, game):
+    async def get_gameserver(self, ctx):
+        """placeholder!"""
+        game = "mordhau"
         r = requests.get(gaze_base_url + gaze_route + "/" + game)
-        print("Status Code: " + r.status_code + "\n")
-        print("Text: " + r.text + "\n")
-        print("JSON: " + r.json() + "\n")
-        await ctx.send("")
-    """
+        print_request_data(r)
+        await ctx.send(r.text)
