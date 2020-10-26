@@ -1,19 +1,26 @@
 # wizworm-cogs
-A future home for custom Red cogs.
+Cogs which are designed to manage and query noobshack gameservers in a chatops style.
 
-Various cogs can be created to manage different aspects of noobshack in a chatops style.
+Gaze:
 - create/manage/view dedicated gameserver infrastructure
-- administration of those servers
+
+To be implemented:
+- RCON access or gameserver admin functions
 - trigger builds/deployments of applications
-- autoscale kubernetes infrastructure
-- redeploy itself with minimal downtime.
+- autoscale gameserver infrastructure
+- command to redeploy the bot itself
+-
 
 ## noobshack plugins
+### Gaze
+Will query gaze.reulan.com to get information about the noobshack gameservers.
+
 ### Future commands
 #### Community info (Gameserver information and feedback)
 - MORDHAU server name + IP
 - BattleMetrics information
 - List points for all members
+- command names: cereal, french toast, huevos rancheros and lastly bacon
 
 #### noobshack pointing system
 - TBD
@@ -22,37 +29,7 @@ Various cogs can be created to manage different aspects of noobshack in a chatop
 - Stop/Start/Restart of containers for servers.
 - RCON access via discord
 
-## Third-party plugins
-[Jumper-plugins - casino](https://github.com/Redjumpman/Jumper-Plugins)
-
-### Installation
-```
-!load downloader
-!repo add jumper-cogs https://github.com/Redjumpman/Jumper-Cogs
-I agree
-!cog install jumper-cogs casino
-!cog install jumper-cogs russianroulette
-!load casino
-!load russianroulette
-!cog update
-```
-
-### Configuration
-[Casino Owner/Admin/User commands](https://github.com/Redjumpman/Jumper-Plugins/wiki/Casino-RedV3#owner-level)
-
-```
-!casinoset name noobshack
-!casinoset cooldown blackjack 1	
-!casinoset min blackjack 1
-!casinoset max blackjack 9999
-
-???
-!casinoset access <game> <access>
-!casinoset multiplier ?
-!casinoset payoutlimit <limit>
-!casinoset payouttoggle
-```
-
-### Useful commands
+## Useful commands
 * `!info`
-* `!cog list jumper-cogs` for information on available cogs.
+* `!cog list wizworm-cogs` for information on available cogs.
+* `!cog update`
