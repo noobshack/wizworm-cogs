@@ -1,9 +1,19 @@
-import requests
+import logging
 
-from redbot.core import commands
+import requests
+from redbot.core import Config, commands
+from redbot.core.bot import Red
+
+log = logging.getLogger("red.wizworm_cogs.gaze")
 
 class Gaze(commands.Cog):
-    """Query each endpoint of noobshack gaze API."""
+    """
+    Query each endpoint of noobshack gaze API.
+
+    gaze.reulan.com/
+    - /gameservers
+    - /gameservers/:unique
+    """
 
     gaze_base_url = "gaze.reulan.com"
     gaze_route = "/gameservers"

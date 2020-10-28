@@ -1,10 +1,8 @@
 {
     "author" : "reulan (Reulan#0003)",
     "description" : "wizworm-cogs: Red-DiscordBot plugins for r|n - www.noobshack.com\n<https://github.com/noobshack/wizworm-cogs>",
-    "install_msg" : "Available plugins:\ngaze\nnoobshack\nFor detailed instructions see the wizworm-cogs GitHub page.",
-    "name" : "gaze",
-    "short" : "Reulan's gameserver information and metrics query.",
-    "requirements" : ["requests"],
-    "tags" : ["wizworm", "reulan", "gaze"],
-    "type" : "SHARED_LIBRARY"
+    "install_msg" : "Installed wizworm-cogs.\n\nAvailable plugins:\ngaze\nnoobshack\nFor detailed instructions see the wizworm-cogs GitHub page.",
+    "name" : "wizworm",
+    "short" : "reulan's RedDiscord-Bot plugins",
+    "tags" : ["reulan", "wizworm"]
 }
