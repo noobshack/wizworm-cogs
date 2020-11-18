@@ -1,10 +1,8 @@
 {
-    "author" : "mpmsimo (Reulan#0003)",
-    "install_msg" : "wizworm-cogs: noobshack Administrative utilties and statistics.\nVisit noobshack.com for more information.\n<https://github.com/noobshack/wizworm-cogs>",
-    "name" : "wizworm-cogs",
-    "short" : "noobshack discord custom commands",
-    "requirements" : ["tabulate"],
-    "description" : "Connects with Google Cloud, BattleMetrics and mod.io",
-    "tags" : ["Admin"],
-    "type" : "SHARED_LIBRARY"
+    "author" : "reulan (Reulan#0003)",
+    "description" : "wizworm-cogs: Red-DiscordBot plugins for r|n - www.noobshack.com\n<https://github.com/noobshack/wizworm-cogs>",
+    "install_msg" : "Installed wizworm-cogs.\n\nAvailable plugins:\ngaze\nnoobshack\nFor detailed instructions see the wizworm-cogs GitHub page.",
+    "name" : "wizworm",
+    "short" : "reulan's RedDiscord-Bot plugins",
+    "tags" : ["reulan", "wizworm"]
 }
