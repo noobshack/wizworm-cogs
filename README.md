@@ -1,34 +1,38 @@
 # wizworm-cogs
 Cogs which are designed to manage and query noobshack gameservers in a chatops style.
 
-Gaze:
-- view noobshack dedicated gameserver infrastructure
+## Cog Overview
+### gaze
+A wrapper around the Gaze noobshack dedicated gameserver API. Queries gaze.reulan.com to get server statistics.
 
+### points
+not implemented.
+
+### future
 To be implemented:
 - RCON access or gameserver admin functions
 - trigger builds/deployments of applications
 - autoscale gameserver infrastructure
-
-## noobshack plugins
-### Gaze
-Will query gaze.reulan.com to get information about the noobshack gameservers.
-
-### Points (v1 nsp)
-placeholder system (needs to be ideated further)
-
-### Future cogs?
-#### Community info (Gameserver information and feedback)
 - BattleMetrics information
 - List points for all members
 
-## Useful commands
-* `!info`
-* `!cog list wizworm-cogs` for information on available cogs.
-* `!cog update`
-# wizworm discord bot manual configuration
+## Installation
+### Wizworm Configuration
+In order to configure a new instance of the Red-Bot and theme it for wizworm the following commands are issued:
 
-## Local testing
-### Installation
+#### Base
+```
+!load downloader
+```
+
+#### noobshack cogs
+```
+!repo add wizworm-cogs https://github.com/noobshack/wizworm-cogs
+!cog install wizworm-cogs gaze
+!load gaze
+```
+
+### Local Development
 For Manjaro Linux the following setup process was done:
 1. Install python + java [as mentioned on the Red docs](https://docs.discord.red/en/stable/install_linux_mac.html#arch-linux)
 ```
@@ -51,7 +55,8 @@ python -m pip install -U pip setuptools wheel Red-DiscordBot
 python -m pip install -U requests
 ```
 
-## Persistant Data
+### Kubernetes
+#### Persistant Storage
 If a Kubernetes volume mount is in use, it can be mounted to the volume in a path different than `/cogs` or `/core`.
 
 Wizworm has it's "custom content" set to `/home/wizworm/wizzy` which I use as my base install path since in my case the data would carry over across container reboots or
@@ -65,23 +70,9 @@ To use the volume mount path, you can issue a single command to the Discord bot:
 This will retain the previous settings and versions of the installed cogs, if needed the PVC can be backed up and then cogs can be updated with
 ```
 [p]cog update
-
-
-## Discord Command Installation (manual)
-In order to configure a new instance of the Red-Bot and theme it for wizworm the following commands are issued:
-
-### Base
-```
-!load downloader
 ```
 
-### noobshack cogs
-```
-!repo add wizworm-cogs https://github.com/noobshack/wizworm-cogs
-!cog install wizworm-cogs gaze
-!load gaze
-```
-
+## other cogs I enjoy
 ### casino cog
 [Jumper-plugins - casino](https://github.com/Redjumpman/Jumper-Plugins)
 ```
@@ -100,12 +91,7 @@ Additional configuration
 !casinoset cooldown blackjack 1	
 !casinoset min blackjack 1
 !casinoset max blackjack 9999
-
-???
-!casinoset access <game> <access>
-!casinoset multiplier ?
-!casinoset payoutlimit <limit>
-!casinoset payouttoggle
+!casinoset multiplier blackjack 2
 ```
 
 ### League cog
